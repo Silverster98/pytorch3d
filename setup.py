@@ -7,6 +7,8 @@
 
 import glob
 import os
+os.environ["TORCH_CUDA_ARCH_LIST"] = "7.5+PTX"
+os.environ["FORCE_CUDA"] = "1"
 import runpy
 import sys
 import warnings
